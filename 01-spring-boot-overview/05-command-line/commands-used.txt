@@ -1,0 +1,19 @@
+check if java is installed properly first:
+echo %JAVA_HOME%
+
+java --version
+
+if something is wrong go to:
+www.luv2code.com/install-java-on-ms-windows
+--------------------------------------------
+cd into directory of project
+if the project is on a different drive (e.g. cmd is on C but project is on F)
+just use F: to get to the desired drive
+--------------------------------------------
+use the maven plugin:
+mvnw package
+--------------------------------------------
+now you have 2 options to run:
+java -jar target\project-name SNAPSHOT
+
+mvnw spring-boot:run
